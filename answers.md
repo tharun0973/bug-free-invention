@@ -1,10 +1,27 @@
-1. If you only had 200 labeled replies, how would you improve the model without collecting thousands more?
-I’d use data augmentation techniques like paraphrasing, back translation, or synonym replacement to expand the dataset. Additionally, I’d leverage transfer learning with a pre-trained transformer like DistilBERT, which can generalize well even with limited labeled data.
+## Reply Classification Strategy
 
-2. How would you ensure your reply classifier doesn’t produce biased or unsafe outputs in production?
-I’d audit the training data for biased or offensive language and apply filters during preprocessing. In production, I’d add confidence thresholds and fallback logic to avoid uncertain predictions, and monitor outputs regularly using human-in-the-loop review.
+**Q1: How would you improve a reply classifier with only 200 labeled replies?**  
+To overcome limited labeled data, I’d apply data augmentation techniques:
+- Paraphrasing via LLMs
+- Back translation for linguistic diversity
+- Synonym replacement for lexical variation
 
-3. Suppose you want to generate personalized cold email openers using an LLM. What prompt design strategies would you use to keep outputs relevant and non-generic?
-I’d include specific context like the recipient’s industry, pain point, and product value proposition in the prompt. I’d also use few-shot examples to guide tone and structure, and enforce constraints like length, personalization, and call-to-action clarity.
+I’d also fine-tune a pre-trained transformer like DistilBERT, which generalizes well on small datasets.
 
-Once this file is saved, your entire submission is ready for GitHub. Let me know if you want help writing the commit message or pushing to your repo — you’ve built a professional-grade pipeline.
+---
+
+**Q2: How would you ensure the classifier avoids biased or unsafe outputs in production?**  
+- Audit training data for bias or offensive language  
+- Apply filters during preprocessing  
+- Use confidence thresholds and fallback logic  
+- Monitor outputs with human-in-the-loop review
+
+---
+
+## Cold Email Generation with LLMs
+
+**Q3: How would you design prompts for personalized cold email openers?**  
+I’d use prompt engineering strategies:
+- Include recipient’s industry, pain point, and product value  
+- Use few-shot examples to guide tone and structure  
+- Enforce constraints like length, personalization, and CTA clarity
