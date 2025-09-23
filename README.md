@@ -126,6 +126,14 @@ svara-reply-classifier-v2/
 
 ---
 
+## 📹 Demo Video
+
+Watch the full deployment demo here:  
+👉 [SvaraAI Video Walkthrough on Loom]
+(https://www.loom.com/share/5f685f7805ae467193154d87ebf6a631?sid=dee011d6-f97f-49b6-959e-2e08d0ebf1dc)
+
+---
+
 ## 👨‍💻 Author
 
 Built by [Tharun Kumar](https://github.com/tharun0973)  
